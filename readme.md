@@ -1,1 +1,0 @@
-https://Kamola-13.github.io/rsschool-cv/cv
