@@ -15,6 +15,12 @@ body {
   font-size: 18px;
 }
 
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .container {
   display: flex;
   height: 100vh;
