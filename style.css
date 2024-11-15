@@ -1,62 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
+/* general */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #FAF3E0;
+  color: #5A5A5A; 
 }
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
 }
 
-/* Style the side navigation */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #b8e6e0;
-  overflow-x: hidden;
+.container {
+  display: flex;
+  height: 100vh;
 }
 
-
-/* Side navigation links */
-.sidenav a {
+.sidebar {
+  flex: 1;
+  background-color: #E6A57E;
   color: white;
-  padding: 16px;
-  text-decoration: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start left;
+  text-align: start left;
+}
+
+.profile-image {
   display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid white;
 }
 
-/* Change color on hover */
-.sidenav a:hover {
-  background-color: #ffffff;
-  color: black;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Style the content */
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
 .content {
-  margin-left: 200px;
-  padding-left: 20px;
+  flex: 3;
+  padding: 20px;
+  background-color: #FAF3E0;
+  overflow-y: auto;
 }
-</style>
-</head>
-<body>
+.content h1 {
+  color: #5C4033;
+  text-align: center;
+}
+.content h2 {
+  color: #A4562B;
+  border-bottom: 2px solid #A4562B;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
 
-<div class="sidenav">
-  <a href="#">Link</a>
-</div>
+.content p, .content li {
+  color: #5A5A5A;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
 
-<div class="content">
-  <h2>CSS Template</h2>
-  <p>A full-height, fixed sidenav and content.</p>
-</div>
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 
-</body>
+  .sidebar {
+    flex: unset;
+    width: 100%;
+  }
+
+  .content {
+    flex: unset;
+    width: 100%;
+  }
+}
