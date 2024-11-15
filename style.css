@@ -2,7 +2,6 @@
 html, body {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 4em;
   background-color: #FAF3E0;
   color: #5A5A5A; 
   margin: 0;
@@ -13,7 +12,6 @@ html, body {
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  padding: 10px 0;
 }
 
 .container {
@@ -26,7 +24,6 @@ html, body {
   flex: 0.7;
   background-color: #E6A57E;
   color: white;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -90,6 +87,7 @@ html, body {
   color: #5A5A5A;
   line-height: 1.6;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 /* Responsive Design */
