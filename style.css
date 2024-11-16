@@ -21,6 +21,20 @@ html, body {
   width: 100%;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
 .sidebar {
   flex: 0.7;
   background-color: #E6A57E;
@@ -30,8 +44,8 @@ html, body {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  position: relative;
-  height: auto;
+  position: fixed;
+  min-height: 100vh;
   overflow: visible;
 }
 
@@ -73,6 +87,7 @@ html, body {
   background-color: #FAF3E0;
   height: auto;
   overflow-y: visible;
+  margin-left: calc(0.7 * 100%);
 }
 .content h1 {
   color: #5C4033;
@@ -87,12 +102,12 @@ html, body {
 
 .content p, .content li {
   color: #5A5A5A;
-  line-height: 1.6;
+  line-height: 1.8;
   margin-bottom: 15px;
   text-align: justify;
 }
 
-code {
+.content code {
   background-color: #F4F4F4;
   padding: 2px 4px;
   border-radius: 4px;
@@ -101,7 +116,7 @@ code {
   text-align: left;
 }
 
-pre {
+.content pre {
   background-color: #F4F4F4;
   padding: 10px;
   border: 1px solid #DDD;
@@ -116,6 +131,7 @@ pre {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    margin-left: 0;
   }
 
   .sidebar {
