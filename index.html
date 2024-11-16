@@ -45,7 +45,41 @@
                 </section>
                 <section id="code">
                     <h2>Code examples</h2>
-                    <p>some code</p>
+                    <code> #include <stdio.h>
+                        #include <stdlib.h>
+                        #include <time.h>
+                        
+                        
+                        void printRandomQuote();
+                        
+                        
+                        int main() {
+                            printf("Welcome! Here’s your motivational boost for today:\n");
+                            printRandomQuote();
+                            return 0;
+                        }
+                        
+                        void printRandomQuote() {
+                            const char *quotes[] = {
+                                "Every expert was once a beginner. Keep pushing forward!",
+                                "Debugging is like being the detective in a mystery where you are also the murderer.",
+                                "First, solve the problem. Then, write the code.",
+                                "Learning to code is a superpower that no one can take away from you.",
+                                "Commit your best, and push to greatness.",
+                                "It’s not a bug. It’s an undocumented feature in the making.",
+                                "What seems impossible now will one day become your warm-up.",
+                                "If you can dream it, you can code it.",
+                                "Stay curious, stay passionate, and keep coding. You're doing great!",
+                                "The best way to predict the future is to code it."
+                            };
+                        
+                            int numQuotes = sizeof(quotes) / sizeof(quotes[0]);
+                            srand(time(NULL));
+                            int randomIndex = rand() % numQuotes;
+                        
+                            printf("%s\n", quotes[randomIndex]);
+                        }
+                    </code>
                 </section>
                 <section id="experience">
                     <h2>Experience</h2>
