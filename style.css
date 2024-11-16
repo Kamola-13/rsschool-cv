@@ -9,16 +9,11 @@ html, body {
   overflow-y: auto;
 }
 
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  padding: 10px 0;
-}
-
 .container {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100vh;
+  height: 100vh;
 }
 
 .header {
@@ -29,11 +24,11 @@ html, body {
   background-color: #333;
   color: white;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
 }
 
 .header nav ul {
@@ -65,7 +60,7 @@ html, body {
   align-items: flex-start;
   text-align: left;
   position: fixed;
-  min-height: 100vh;
+  min-height: 90vh;
   overflow: visible;
 }
 
@@ -102,12 +97,12 @@ html, body {
 }
 
 .content {
+  flex-direction: column;
   flex: 3.3;
   padding: 20px;
   background-color: #FAF3E0;
   height: auto;
   overflow-y: visible;
-  margin-left: calc(0.7 * 100%);
 }
 .content h1 {
   color: #5C4033;
@@ -151,7 +146,6 @@ html, body {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    margin-left: 0;
   }
 
   .sidebar {
@@ -163,7 +157,7 @@ html, body {
     flex: unset;
     width: 100%;
   }
-  
+
   .header {
     flex-direction: column;
     padding: 10px 15px;
