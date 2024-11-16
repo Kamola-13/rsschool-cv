@@ -93,20 +93,20 @@ html, body {
 }
 
 code {
-  background-color: #FFF4E1;
+  background-color: #F4F4F4;
   padding: 2px 4px;
   border-radius: 4px;
   font-family: "Courier New", Courier, monospace;
-  color: #333333;
+  color: #4F4F4F;
 }
 
 pre {
-  background-color: #FFF4E1;
+  background-color: #F4F4F4;
   padding: 10px;
-  border: 1px solid #C9A27C;
+  border: 1px solid #DDD;
   border-radius: 4px;
   font-family: "Courier New", Courier, monospace;
-  color: #333333;
+  color: #4F4F4F;
   overflow-x: auto;
 }
 
