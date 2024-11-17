@@ -129,7 +129,7 @@ html {
   text-align: left;
 }
 
-.content code pre {
+.pre {
   background-color: #F4F4F4;
   padding: 10px;
   border: 1px solid #DDD;
