@@ -150,9 +150,8 @@ html {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.footer ul, 
-.footer ul li, 
-.footer ul li a {
+.footer li, 
+.footer li a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
