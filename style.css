@@ -36,10 +36,7 @@ html {
   overflow: hidden;
 }
 
-.header ul li {
-  float: center;
-}
-
+.header ul li,
 .header ul li a {
   color: white;
   text-decoration: none;
