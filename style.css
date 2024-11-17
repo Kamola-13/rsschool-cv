@@ -18,10 +18,8 @@ html, body {
 .header {
   display: flex;
   flex-direction: column;
-  flex: 1 3.3;
+  flex: 0.2 3.3;
   position: fixed;
-  height: 10hv;
-  width: calc(100vh-20vh);
   background-color: #333;
   color: white;
   justify-content: space-between;
@@ -51,14 +49,13 @@ html, body {
 .sidebar {
   display: flex;
   flex-direction: column;
+  flex: 0.8 0.7;
   background-color: #E6A57E;
   color: white;
   padding: 20px;
   align-items: flex-start;
   text-align: left;
   position: fixed;
-  width: 20vh;
-  height: calc(100vh-10hv);
   overflow: visible;
 }
 
@@ -96,11 +93,10 @@ html, body {
 
 .content {
   display: flex;
+  flex: 0.8 3.3;
   flex-direction: column;
   padding: 20px;
   background-color: #FAF3E0;
-  height: calc(100vh-10hv);
-  width: calc(100vh-20vh);
   overflow-y: visible;
 }
 .content h1 {
