@@ -17,9 +17,8 @@ html, body {
 
 .header {
   display: flex;
-  flex-direction: column;
-  height: 20vh;
-  width: calc(100vw-20vw);
+  height: 5vh;
+  width: 100vw;
   position: fixed;
   background-color: #333;
   color: white;
@@ -50,14 +49,13 @@ html, body {
 
 .sidebar {
   display: flex;
+  flex: 0 0 250px;
   flex-direction: column;
   background-color: #E6A57E;
   color: white;
   padding: 20px;
   text-align: left;
   position: fixed;
-  width: 20vw;
-  height: 100vh;
 }
 
 .profile-image {
@@ -95,14 +93,10 @@ html, body {
 .content {
   display: flex;
   flex-direction: column;
+  flex: 1;
   padding: 20px;
   background-color: #FAF3E0;
   overflow-y: visible;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
-  margin-left: 20vh;
-  width: calc(100vw-20vw);
-
 }
 .content h1 {
   color: #5C4033;
