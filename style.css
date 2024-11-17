@@ -27,7 +27,7 @@ html {
 .header ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-left: 250px;
   gap: 15px;
@@ -91,14 +91,14 @@ html {
 }
 
 .content {
-  position: absolute;
-  left: 250px;
-  top: 60px;
-  bottom: 60px;
-  padding: 20px;
+  position: relative;
+  margin-left: 300px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 60px 20px;
   background-color: #FAF3E0;
   text-align: left;
-  z-index: 3;
+  z-index: auto;
 }
 
 .content h1 {
@@ -128,7 +128,7 @@ html {
   text-align: left;
 }
 
-.content pre {
+.content code pre {
   background-color: #F4F4F4;
   padding: 10px;
   border: 1px solid #DDD;
@@ -151,7 +151,7 @@ html {
 .footer ul li a {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-left: 250px;
   gap: 15px;
