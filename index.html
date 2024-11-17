@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon.svg"/>
+    <title>CV | Kamola Mamatova</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <ul>
+                <li><a href="#summary">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#code">Code example</a></li>
+            </ul>
+        </header>
+        <aside class="sidebar">
+            <img src="assets/profile.jpg" alt="Profile Picture" class="profile-image">
+            <h2><a href="https://kamola-13.github.io/rsschool-cv/">Kamola Mamatova</a></h2>
+            <ul>
+                <li>Address: Tashkent, Uzbekistan</li>
+                <li>Contact me via <a href="mailto:kam.mamatova@gmail.com">email</a> or</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/kamola-mamatova/">Kamola Mamatova</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="summary">
+                <h2>About Me</h2>
+                <p>I am driven by a commitment to continuous learning and meaningful collaboration, with a strong enthusiasm for projects that make a positive impact on society. With a strong foundation in Economics and Finance, I am now on a path to expanding my skills in the IT field. My goal is to apply my analytical strengths and deepen my technical expertise to contribute to innovative and impactful tech solutions.</p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <li><b>Programming Languages:</b> Python, C, SQL</li>
+                <li><b>Frameworks/Libraries:</b> C Standard Libraries (stdlib.h, stdio.h, string.h, math.h)</li>
+                <li><b>Version Control:</b> Git, GitHub, GitLab</li>
+                <li><b>Tools:</b> Visual Studio, Command Line/Terminal, Excel (advanced), SQL Server Management Studio (SSMS)</li>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <li><i>2021 - present:</i> Analyst, OptiTeam Consulting</li>
+                <li><i>2017 - 2019:</i>    Researcher, Center for Economics Research and Reforms</li>
+                <li><i>2015 - 2017:</i>    Specialist, Medol Investment</li>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <li><b>Westminster International University in Tashkent, Uzbekistan:</b>
+                    Bachelor's Degree in Economics with Finance</li>
+                <li><b>Higher School of Economics, Russia:</b>
+                    Courses in Innovation Management and Finance</li>
+                <li><b>School 21:</b>
+                    IT skills (currently studying)</li>
+                <li><b>RS School:</b>
+                    JS, Front end course (currently studying)</li>
+            </section>
+            <section id="languages">
+                <h2>Languages</h2>
+                <li><b>English</b>: C1 (My Bachelor's degree studies were in English)</li>
+                <li><b>Russian</b>: C1 (My work is in Russian)</li>
+                <li><b>Uzbek</b>: Native language</li>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <li><a href="https://github.com/Kamola-13/rsschool-cv">RS School CV</a></li>
+            </section>
+            <section id="code">
+                <h2>Code example</h2>
+                <pre class="pre">
+                    <code class="code">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+void printRandomQuote();
+
+int main() {
+    printf("Welcome! Here’s your motivational boost for today:\n");
+    printRandomQuote();
+    return 0;
+}
+
+void printRandomQuote() {
+    const char *quotes[] = {
+        "Every expert was once a beginner. Keep pushing forward!",
+        "Debugging is like being the detective in a mystery where you are also the murderer.",
+        "First, solve the problem. Then, write the code.",
+        "Learning to code is a superpower that no one can take away from you.",
+        "Commit your best, and push to greatness.",
+        "It’s not a bug. It’s an undocumented feature in the making.",
+        "If you can dream it, you can code it.",
+        "Stay curious, stay passionate, and keep coding. You're doing great!",
+    };
+
+    int numQuotes = sizeof(quotes) / sizeof(quotes[0]);
+    srand(time(NULL));
+    int randomIndex = rand() % numQuotes;
+    
+    printf("%s\n", quotes[randomIndex]);
+}
+                    </code>
+                </pre>
+            </section>
+        </main>
+        <footer class="footer">
+            <ul>
+                <li><a href="https://github.com/kamola-13" target="_blank"><img src="assets/github-logo.svg" width="30px" height="30px" alt="Github/Kamola-13"></a></li>
+                <li>2024</li>
+                <li><a href="https://rs.school/" target="_blank"><img src="assets/rs-school-logo.svg" width="80px" height="30px" alt="RS School JS/FE Course"></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
