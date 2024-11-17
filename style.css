@@ -12,17 +12,21 @@ html, body {
 .container {
   display: flex;
   width: 100%;
-  margin: 0 auto;
+  margin: 2vh,2vw;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  flex: 0.2 3.3;
+  width: calc(100vw-20px);
+  height: 20px;
+  top: 0;
+  left: 0;
   position: fixed;
   background-color: #333;
   color: white;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -49,14 +53,14 @@ html, body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  flex: 0.8 0.7;
   background-color: #E6A57E;
   color: white;
   padding: 20px;
-  align-items: flex-start;
   text-align: left;
   position: fixed;
-  overflow: visible;
+  top: 0;
+  left: 0;
+  width: 20px;
 }
 
 .profile-image {
@@ -93,11 +97,14 @@ html, body {
 
 .content {
   display: flex;
-  flex: 0.8 3.3;
   flex-direction: column;
   padding: 20px;
   background-color: #FAF3E0;
   overflow-y: visible;
+  top: 0;
+  left: 20px;
+  width: calc(100vw-20px);
+  height: calc(100vh - 20px);
 }
 .content h1 {
   color: #5C4033;
