@@ -11,17 +11,14 @@ html, body {
 
 .container {
   display: flex;
-  width: 100%;
-  margin: 2vh,2vw;
+  width: 100vw;
+  height: 100vh;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  width: calc(100vw-20px);
-  height: 20px;
-  top: 0;
-  left: 0;
+  height: 20vh;
   position: fixed;
   background-color: #333;
   color: white;
@@ -58,9 +55,7 @@ html, body {
   padding: 20px;
   text-align: left;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
+  width: 20vw;
 }
 
 .profile-image {
@@ -101,10 +96,10 @@ html, body {
   padding: 20px;
   background-color: #FAF3E0;
   overflow-y: visible;
-  top: 0;
-  left: 20px;
-  width: calc(100vw-20px);
-  height: calc(100vh - 20px);
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  margin-left: 20vh;
+
 }
 .content h1 {
   color: #5C4033;
