@@ -21,25 +21,28 @@ html {
   top: 0;
   background-color: #333;
   color: white;
-  padding: 15px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  justify-content: space-between;
-  align-items: center;
 }
 
-.container .header nav ul {
+.container .header ul {
   gap: 15px;
   list-style: none;
   margin: 0;
   padding: 0;
-
+  overflow: hidden;
 }
 
-.container .header nav ul li a {
+.container .header ul li {
+  float: center;
+}
+
+.container .header ul li a {
+  display: block;
   color: white;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
+  text-align: center;
 }
 
 .container .header nav ul li a:hover {
