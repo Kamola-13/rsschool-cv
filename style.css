@@ -89,6 +89,9 @@ html {
   text-decoration: none;
 }
 
+.sidebar ul li a:hover {
+  color: #FFD700;
+}
 .content {
   position: relative;
   left: 310px;
@@ -142,7 +145,7 @@ html {
 .footer{
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: auto;
   bottom: 0;
   height: 60px;
   background-color: white;
@@ -150,18 +153,27 @@ html {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.footer li, 
-.footer li a {
+.footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 300px;
+  margin-left: 310px;
+  margin-right: 20px;
   gap: 5px;
   list-style: none;
   overflow: hidden;
+}
+
+.footer ul li,
+.footer ul li a {
   color: #333;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
+  text-align: center;
+}
+
+.footer ul li a:hover {
+  color: #FFD700;
 }
