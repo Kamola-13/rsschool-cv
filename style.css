@@ -26,11 +26,11 @@ html {
 
 .header ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 250px;
-  gap: 15px;
+  margin-left: 300px;
+  gap: 5px;
   list-style: none;
   overflow: hidden;
 }
@@ -150,11 +150,11 @@ html {
 .footer ul li, 
 .footer ul li a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 250px;
-  gap: 15px;
+  margin-left: 300px;
+  gap: 5px;
   list-style: none;
   overflow: hidden;
   color: white;
