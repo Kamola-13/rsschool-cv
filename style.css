@@ -16,13 +16,15 @@ html {
 .container .header{
   position: fixed;
   width: 100%;
+  height: 60px;
   z-index: 1;
   top: 0;
   background-color: #333;
   color: white;
   padding: 15px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container .header nav ul {
@@ -30,6 +32,7 @@ html {
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .container .header nav ul li a {
@@ -47,7 +50,7 @@ html {
   position: fixed;
   z-index: 3;
   width: 250px;
-  top: 43px;
+  top: 60px;
   bottom: 0;
   height: inherit;
   background-color: #E6A57E;
@@ -86,6 +89,9 @@ html {
 }
 
 .container .content {
+  left: 250px;
+  top: 60px;
+  bottom: 60px;
   padding: 20px;
   background-color: #FAF3E0;
 }
@@ -131,4 +137,5 @@ html {
   width: 100%;
   z-index: 1;
   bottom: 0;
+  height: 60px;
 }
