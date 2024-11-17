@@ -19,6 +19,7 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 20vh;
+  width: calc(100vw-20vw);
   position: fixed;
   background-color: #333;
   color: white;
@@ -56,6 +57,7 @@ html, body {
   text-align: left;
   position: fixed;
   width: 20vw;
+  height: 100vh;
 }
 
 .profile-image {
@@ -99,6 +101,7 @@ html, body {
   margin-top: 20vh;
   margin-bottom: 20vh;
   margin-left: 20vh;
+  width: calc(100vw-20vw);
 
 }
 .content h1 {
