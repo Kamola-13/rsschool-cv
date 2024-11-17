@@ -30,7 +30,7 @@ html {
   justify-content: space-between;
   align-items: center;
   margin-left: 310px;
-  margin-right: 10px;
+  margin-right: 20px;
   gap: 5px;
   list-style: none;
   overflow: hidden;
@@ -54,7 +54,7 @@ html {
   z-index: 2;
   width: 250px;
   top: 60px;
-  bottom: 0;
+  bottom: 60px;
   height: inherit;
   background-color: #E6A57E;
   color: white;
@@ -81,7 +81,7 @@ html {
 }
 
 .sidebar li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .sidebar a {
@@ -91,10 +91,10 @@ html {
 
 .content {
   position: relative;
-  margin-left: 310px;
-  margin-top: 70px;
-  margin-bottom: 60px;
-  margin-right: 10px;
+  left: 310px;
+  top: 80px;
+  bottom: 70px;
+  right: 10px;
   background-color: #FAF3E0;
   text-align: left;
   z-index: auto;
@@ -145,8 +145,8 @@ html {
   z-index: 1;
   bottom: 0;
   height: 60px;
-  background-color: #333;
-  color: white;
+  background-color: white;
+  color: #333;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -161,7 +161,7 @@ html {
   gap: 5px;
   list-style: none;
   overflow: hidden;
-  color: white;
+  color: #333;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
