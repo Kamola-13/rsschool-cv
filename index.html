@@ -66,36 +66,36 @@
                 <h2>Code example</h2>
                 <pre class="pre">
                     <code class="code">
-                        #include <stdio.h>
-                        #include <stdlib.h>
-                        #include <time.h>
-                                                        
-                        void printRandomQuote();
-                            
-                        int main() {
-                            printf("Welcome! Here’s your motivational boost for today:\n");
-                            printRandomQuote();
-                            return 0;
-                        }
-                            
-                        void printRandomQuote() {
-                            const char *quotes[] = {
-                                "Every expert was once a beginner. Keep pushing forward!",
-                                "Debugging is like being the detective in a mystery where you are also the murderer.",
-                                "First, solve the problem. Then, write the code.",
-                                "Learning to code is a superpower that no one can take away from you.",
-                                "Commit your best, and push to greatness.",
-                                "It’s not a bug. It’s an undocumented feature in the making.",
-                                "If you can dream it, you can code it.",
-                                "Stay curious, stay passionate, and keep coding. You're doing great!",
-                            };
-                            
-                            int numQuotes = sizeof(quotes) / sizeof(quotes[0]);
-                            srand(time(NULL));
-                            int randomIndex = rand() % numQuotes;
-                            
-                            printf("%s\n", quotes[randomIndex]);
-                        }
+#include &alt;stdio.h&gt;
+#include &alt;stdlib.h&gt;
+#include &alt;time.h&gt;
+
+void printRandomQuote();
+
+int main() {
+    printf("Welcome! Here’s your motivational boost for today:\n");
+    printRandomQuote();
+    return 0;
+}
+
+void printRandomQuote() {
+    const char *quotes[] = {
+        "Every expert was once a beginner. Keep pushing forward!",
+        "Debugging is like being the detective in a mystery where you are also the murderer.",
+        "First, solve the problem. Then, write the code.",
+        "Learning to code is a superpower that no one can take away from you.",
+        "Commit your best, and push to greatness.",
+        "It’s not a bug. It’s an undocumented feature in the making.",
+        "If you can dream it, you can code it.",
+        "Stay curious, stay passionate, and keep coding. You're doing great!",
+    };
+
+    int numQuotes = sizeof(quotes) / sizeof(quotes[0]);
+    srand(time(NULL));
+    int randomIndex = rand() % numQuotes;
+    
+    printf("%s\n", quotes[randomIndex]);
+}
                     </code>
                 </pre>
             </section>
