@@ -29,7 +29,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 300px;
+  margin-left: 310px;
   gap: 5px;
   list-style: none;
   overflow: hidden;
@@ -92,10 +92,9 @@ html {
 
 .content {
   position: relative;
-  margin-left: 300px;
-  margin-top: 60px;
+  margin-left: 310px;
+  margin-top: 70px;
   margin-bottom: 60px;
-  padding: 60px 20px;
   background-color: #FAF3E0;
   text-align: left;
   z-index: auto;
