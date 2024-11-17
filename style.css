@@ -30,6 +30,7 @@ html {
   justify-content: space-between;
   align-items: center;
   margin-left: 310px;
+  margin-right: 10px;
   gap: 5px;
   list-style: none;
   overflow: hidden;
@@ -95,6 +96,7 @@ html {
   margin-left: 310px;
   margin-top: 70px;
   margin-bottom: 60px;
+  margin-right: 10px;
   background-color: #FAF3E0;
   text-align: left;
   z-index: auto;
