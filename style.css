@@ -152,6 +152,7 @@ html, body {
   .sidebar {
     flex: unset;
     width: 100%;
+    position: relative;
   }
 
   .content {
