@@ -51,10 +51,10 @@ html {
 
 .sidebar{
   position: fixed;
-  z-index: 2;
+  z-index: auto;
   width: 250px;
-  top: 0;
-  bottom: 0;
+  top: 50px;
+  bottom: 50px;
   height: inherit;
   background-color: #E6A57E;
   color: white;
